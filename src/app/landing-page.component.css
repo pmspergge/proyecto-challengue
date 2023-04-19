@@ -1,0 +1,121 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav button {
+    background-color: #42b983;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+}
+
+.izquierda {
+    width: 50%;
+    padding: 0px 100px 0px 100px;
+
+}
+
+.izquierda h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 65px;
+    /* or 162% */
+    margin-bottom: 100px;
+
+    letter-spacing: 0.5px;
+
+    color: #333333;
+}
+
+.izquierda p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    margin-bottom: 100px;
+
+    letter-spacing: 0.5px;
+
+    color: #999999;
+}
+
+.izquierda button {
+    background: linear-gradient(180deg, #33A3AA 0%, rgba(71, 170, 176, 0.87) 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.derecha {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen1 {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#elementos {
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .derecha,
+    .izquierda {
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    .izquierda h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .izquierda p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}
