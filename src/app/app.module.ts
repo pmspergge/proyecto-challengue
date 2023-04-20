@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { LandingPageComponent } from './landing-page.component';
+import { HeaderComponent } from './header/header.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
-    LandingPageComponent
+    HeaderComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [LandingPageComponent]
+  bootstrap: [HeaderComponent,
+    MainComponent]
 })
 export class AppModule { }
 
