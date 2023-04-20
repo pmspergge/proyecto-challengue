@@ -9,4 +9,9 @@ export class HeaderComponent {
 
     items = ['Inicio','Productos','Servicios','Trabajo'];
 
+    contactClicked() {
+        // Agrega el código para manejar el evento de clic del botón
+        console.log("Contacto clickeado");
+    }
 }
+

@@ -1,4 +1,5 @@
 main {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,22 +9,25 @@ main {
     background-size: cover;
     padding: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+    flex-direction: row;
+    background: linear-gradient(104.08deg, #FFFFFF 11.14%, #FFFEFE 54.49%, #F8F8F8 90.41%, #FFFFFF 90.41%);
 }
+
 
 .izquierda {
     width: 50%;
-    padding: 0px 100px 0px 100px;
+    padding: 0px 0px 0px 200px;
 
 }
 
 .izquierda h1 {
+
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 40px;
     line-height: 65px;
     /* or 162% */
-    margin-bottom: 100px;
 
     letter-spacing: 0.5px;
 
@@ -37,7 +41,8 @@ main {
     font-size: 16px;
     line-height: 26px;
     /* or 162% */
-    margin-bottom: 100px;
+    padding: 20px 200px 40px 0px;
+
 
     letter-spacing: 0.5px;
 
@@ -45,11 +50,23 @@ main {
 }
 
 .izquierda button {
+
+    filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.25));
     background: linear-gradient(180deg, #33A3AA 0%, rgba(71, 170, 176, 0.87) 100%);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 7px 45px;
     border-radius: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
 }
 
 .derecha {
@@ -57,6 +74,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 1447px;
+    height: 688px;
 }
 
 #imagen1 {
@@ -68,22 +88,125 @@ main {
     position: absolute;
 }
 
+/* Tamaño de pantalla pequeña */
 @media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 30px;
+    }
 
-    .derecha,
     .izquierda {
         width: 100%;
         padding: 0;
-        border: none;
     }
 
     .izquierda h1 {
         font-size: 2.5rem;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+    }
+
+    .izquierda p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .derecha {
+        padding-top: 50px;
+    }
+
+    #imagen1 {
+        max-width: 100%;
+    }
+
+    #elementos {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+/* Tamaño de pantalla mediana */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* Estilos CSS para pantallas medianas */
+    main {
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .izquierda {
+        padding: 0;
+    }
+
+    .derecha {
+        padding-top: 50px;
+    }
+
+    #imagen1 {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #elementos {
+        display: none;
+    }
+
+    .izquierda h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: center;
     }
 
     .izquierda p {
         font-size: 1rem;
-        margin-bottom: 20px;
+        line-height: 1.5;
+        margin-bottom: 30px;
     }
+}
+
+/* Tamaño de pantalla grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /* Estilos CSS para pantallas grandes */
+    main {
+        height: 89vh;
+        padding: 10px;
+    }
+
+    .izquierda {
+        padding: 0;
+        text-align: center;
+    }
+
+    .derecha {
+        padding-top: 50px;
+    }
+
+    #imagen1 {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #elementos {
+        display: none;
+    }
+
+    .izquierda h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .izquierda p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+}
+
+/* Tamaño de pantalla extra grande */
+@media only screen and (min-width: 1200px) {
+
+    /* Estilos CSS para pantallas extra grandes */
+
 }

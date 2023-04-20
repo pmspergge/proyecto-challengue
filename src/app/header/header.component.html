@@ -1,8 +1,12 @@
 <header>
-    <img src="./../assets/Group 1000004374.png" alt="Logo de la empresa">
+    <a href="/">
+        <img src="./../assets/Group 1000004374.png" alt="Logo de la empresa">
+    </a>
     <nav>
         <ul>
-            <li *ngFor="let item of items">{{ item }}</li>
+            <li *ngFor="let item of items">
+                <a href="#">{{ item }}</a>
+            </li>
             <li><button>Contactanos</button></li>
         </ul>
     </nav>

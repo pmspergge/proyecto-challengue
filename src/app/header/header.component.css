@@ -1,34 +1,157 @@
 header {
+    font-family: 'Poppins';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #f7f7f7;
+    padding: 2vh 5vw;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2vw;
     align-items: center;
+    margin: 0;
+}
+
+nav li {
+    font-size: 2vh;
+    flex: 1;
 }
 
 nav button {
-    background-color: #42b983;
+    background-color: #2A8A90;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 1vh 2vw;
+    border-radius: 1vh;
+    font-size: 1.8vh;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+nav ul li:nth-child(1) a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(1) a:hover {
+    color: #000;
+}
+
+
+/* Tamaño de pantalla pequeña */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 2vh;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 2vh;
     }
+
+    nav li {
+        font-size: 3.5vw;
+        flex: none;
+    }
+
+    nav button {
+        font-size: 3.5vw;
+        padding: 1vh 2.5vw;
+        border-radius: 2.5vw;
+    }
+
+}
+
+
+
+/* Tamaño de pantalla mediana */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* Estilos CSS para pantallas medianas */
+    header {
+        padding: 2vh 3vw;
+    }
+
+    nav ul {
+        gap: 1.5vw;
+    }
+
+    nav li {
+        font-size: 1.8vh;
+    }
+
+    nav button {
+        font-size: 1.5vh;
+        padding: 0.8vh 1.5vw;
+        border-radius: 0.8vh;
+    }
+
+}
+
+/* Tamaño de pantalla grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /* Estilos CSS para pantallas grandes */
+    header {
+        padding: 2vh 4vw;
+    }
+
+    nav ul {
+        gap: 2.5vw;
+    }
+
+    nav li {
+        font-size: 1.8vh;
+    }
+
+    nav button {
+        font-size: 1.5vh;
+        padding: 0.8vh 1.5vw;
+        border-radius: 0.8vh;
+    }
+
+}
+
+/* Tamaño de pantalla extra grande */
+@media only screen and (min-width: 1200px) {
+
+    /* Estilos CSS para pantallas extra grandes */
+    header {
+        padding: 2vh 6vw;
+    }
+
+    nav ul {
+        gap: 3vw;
+    }
+
+    nav li {
+        font-size: 2vh;
+    }
+
+    nav button {
+        font-size: 1.8vh;
+        padding: 1vh 2vw;
+        border-radius: 1vh;
+    }
+
 }
