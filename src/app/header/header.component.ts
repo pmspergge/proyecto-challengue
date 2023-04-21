@@ -13,5 +13,11 @@ export class HeaderComponent {
         // Agrega el código para manejar el evento de clic del botón
         console.log("Contacto clickeado");
     }
+
+    isMenuOpen = false;
+
+    toggleMenu(): void {
+      this.isMenuOpen = !this.isMenuOpen;
+    }
 }
 

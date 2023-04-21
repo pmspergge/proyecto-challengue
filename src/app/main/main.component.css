@@ -8,24 +8,27 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.06));
     flex-direction: row;
-    background: linear-gradient(104.08deg, #FFFFFF 11.14%, #FFFEFE 54.49%, #F8F8F8 90.41%, #FFFFFF 90.41%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 11%, rgba(255, 254, 254, 1) 54%, rgba(255, 255, 255, 1) 58%, rgba(248, 248, 248, 1) 90%);
 }
+
 
 
 .izquierda {
     width: 50%;
-    padding: 0px 0px 0px 200px;
+    padding: 0px 0px 0px 150px;
 
 }
 
 .izquierda h1 {
 
+
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
+    font-weight: bolder;
+    font-size: 45px;
     line-height: 65px;
     /* or 162% */
 
@@ -41,7 +44,7 @@ main {
     font-size: 16px;
     line-height: 26px;
     /* or 162% */
-    padding: 20px 200px 40px 0px;
+    padding: 50px 50px 50px 0px;
 
 
     letter-spacing: 0.5px;
@@ -69,6 +72,11 @@ main {
     color: #FFFFFF;
 }
 
+.izquierda button:hover {
+
+    background: linear-gradient(180deg, #828282 0%, rgba(96, 173, 177, 0.87) 100%);
+}
+
 .derecha {
     width: 50%;
     display: flex;
@@ -82,10 +90,12 @@ main {
 #imagen1 {
     max-width: 100%;
     border-radius: 50%;
+
 }
 
 #elementos {
     position: absolute;
+    max-width: 100%;
 }
 
 /* Tamaño de pantalla pequeña */
@@ -94,35 +104,43 @@ main {
         flex-direction: column;
         align-items: center;
         height: auto;
-        padding: 30px;
+        padding: 35px 15px 0px 15px;
     }
 
     .izquierda {
         width: 100%;
-        padding: 0;
+        padding: 15px;
+        text-align: center;
     }
 
     .izquierda h1 {
         font-size: 2.5rem;
-        margin-bottom: 0px;
+        margin: auto;
+        padding: 20px 0px 20px 0px;
     }
 
     .izquierda p {
         font-size: 1.2rem;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 20px 0px 50px 0px;
     }
 
-    .derecha {
-        padding-top: 50px;
+
+    button {
+        padding-bottom: 0px;
     }
+
+
 
     #imagen1 {
-        max-width: 100%;
+        width: 300px;
+        height: 300px;
     }
 
     #elementos {
         position: absolute;
-        width: 100%;
+        width: 400px;
+        max-width: 100%;
     }
 }
 
@@ -131,37 +149,44 @@ main {
 
     /* Estilos CSS para pantallas medianas */
     main {
-        height: 100vh;
-        padding: 20px;
+        height: 60vh;
+        padding: 35px 15px 0px 15px;
     }
 
     .izquierda {
-        padding: 0;
+        padding: 0px 10px 0px 40px;
+        text-align: center;
     }
 
     .derecha {
-        padding-top: 50px;
+        padding: 30px 0px 60px 50px;
     }
 
+
     #imagen1 {
-        max-width: 100%;
-        margin-bottom: 30px;
+        width: 300px;
+        height: 300px;
     }
 
     #elementos {
-        display: none;
+
+
+        position: absolute;
+        max-width: 100%;
     }
 
     .izquierda h1 {
         font-size: 2rem;
         line-height: 1.2;
-        text-align: center;
+        padding: 0;
+        margin: auto;
     }
 
     .izquierda p {
         font-size: 1rem;
         line-height: 1.5;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        padding: 0;
     }
 }
 
@@ -170,43 +195,42 @@ main {
 
     /* Estilos CSS para pantallas grandes */
     main {
-        height: 89vh;
-        padding: 10px;
+        height: 65vh;
+        padding: 35px 15px 0px 15px;
     }
 
     .izquierda {
-        padding: 0;
+        padding: 0px 10px 0px 40px;
         text-align: center;
     }
 
     .derecha {
-        padding-top: 50px;
+        padding: 0;
     }
 
     #imagen1 {
-        max-width: 100%;
-        margin-bottom: 30px;
+        width: 400px;
+        height: 400px;
     }
 
     #elementos {
-        display: none;
+
+        position: absolute;
+        max-width: 100%;
     }
 
     .izquierda h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 1.2;
+        padding: 0;
+        margin: auto;
     }
 
     .izquierda p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.5;
-        margin-bottom: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0;
     }
-}
-
-/* Tamaño de pantalla extra grande */
-@media only screen and (min-width: 1200px) {
-
-    /* Estilos CSS para pantallas extra grandes */
-
 }

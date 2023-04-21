@@ -7,7 +7,7 @@
             <li *ngFor="let item of items">
                 <a href="#">{{ item }}</a>
             </li>
-            <li><button>Contactanos</button></li>
+            <li><button (click)="contactClicked()">Contactanos</button></li>
         </ul>
     </nav>
 </header>

@@ -2,7 +2,6 @@ header {
     font-family: 'Poppins';
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 2vh 5vw;
     background-color: #FFFFFF;
     box-sizing: border-box;
@@ -25,6 +24,15 @@ nav li {
 
 nav button {
     background-color: #2A8A90;
+    color: #fff;
+    border: none;
+    padding: 1vh 2vw;
+    border-radius: 1vh;
+    font-size: 1.8vh;
+}
+
+nav button:hover {
+    background-color: #8a8a8a;
     color: #fff;
     border: none;
     padding: 1vh 2vw;
@@ -55,23 +63,24 @@ nav ul li:nth-child(1) a:hover {
 
 /* Tamaño de pantalla pequeña */
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
-        align-items: center;
     }
 
-    nav {
-        margin-top: 2vh;
+    img {
+        width: 35%;
     }
 
     nav ul {
         flex-direction: column;
         gap: 2vh;
+        align-items: center;
+        padding-right: 40px;
     }
 
     nav li {
         font-size: 3.5vw;
-        flex: none;
     }
 
     nav button {
@@ -85,15 +94,15 @@ nav ul li:nth-child(1) a:hover {
 
 
 /* Tamaño de pantalla mediana */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 991px) {
 
     /* Estilos CSS para pantallas medianas */
     header {
-        padding: 2vh 3vw;
+        padding: 2vh 4vw;
     }
 
     nav ul {
-        gap: 1.5vw;
+        gap: 2vw;
     }
 
     nav li {
